@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+/* .dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+:root{
+    --main-color: #01161e;
+    --second-color: #124559;
+    --third-color: #598392;
+    --fourth-color: #aec3b0;
+    --fifth-color: #eff6e0;
+}
+
+.header {
+    font-size: max(30px, 5vw);
+    color: var(--third-color);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.header .header-left {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding-top: 1vw;
+}
+
+.header .header-left .header-logo img{
+    display: flex;
+    flex-direction: row;
+    width: max(4vw + 1rem, 4vw);
+    height: auto;
+    padding-top: 0.7vw;
+    
+    transition: transform 150ms ease-in-out;
+}
+
+.header .header-left .header-logo img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.header .header-right{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 2vw;
+    padding-top: 1vw;
+
+}
+
+.header .material-symbols-outlined {
+    border-radius : 1vw;
+    font-size: clamp(3vw + 1rem, 3vw, 3vw);
+    
+    transition: transform 150ms ease-in-out, 
+                background-color 150ms ease-in-out,
+                box-shadow 150ms ease-in-out,
+                padding 150ms ease-in-out;
+}
+
+.header .header-right span:hover{
+    box-shadow: 0 0 0 0.5vw var(--third-color);
+    background-color: var(--third-color);
+    cursor: pointer;
+    transform: scale(1.2);
+    color: var(--fourth-color);
+}
+
