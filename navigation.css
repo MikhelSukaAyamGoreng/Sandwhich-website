@@ -41,7 +41,7 @@
 }
 
 .navigation .material-symbols-outlined {
-    font-size: clamp(3vw + 1rem, 3vw, 3vw); 
+    font-size: max(3vw + 1rem, 3vw, 3vw); 
     cursor: pointer;
     border-radius: 1vw;
     transition: transform 150ms ease-in-out, 
