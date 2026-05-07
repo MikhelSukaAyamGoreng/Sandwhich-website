@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
-/* .dm-sans-<uniquifier> {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
 
 :root{
     --main-color: #01161e;
@@ -17,15 +11,126 @@
 body {
     font-family: "DM Sans", sans-serif;       
     background-color: var(--main-color);
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
-.content {
-    padding: 1vw 1vw 1vw 1vw;
-    background-color: var(--fifth-color);
+.mainContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+    background-color: black;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    margin: 2vw;
+    width: 100%;
     height: 20vw;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
 
-.content .First span{
+.content1 .img-wrapper {
+    background-color: var(--fifth-color);
+    padding: .5vw;
+    border-radius: 2vw;
+}
+
+.content1 img {
+    height: 100%;
+    width: auto;
+    border-radius: 2vw;
+}
+
+.content1-text {
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
     color: var(--third-color);
+    text-align: center;
+}
+
+.content1-div1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    flex-direction: row;
+    font-size: max(2vw, 2vw + 1px);
+    color: var(--fourth-color);
+    padding-top: 2vw;
+}
+.content1-div1 .material-symbols-outlined{
+    font-size: max(3vw, 3vw + 1px);
+}
+.content1-div1-title {
+    font-size: max(4vw, 4vw + 1px); 
+    padding-bottom: .5vw; 
+    font-weight: 500;
+    color: var(--fourth-color);
+}
+.content1-div2 {
+    display: flex;
+    flex-direction: column;
+}
+.content1-div2-text {
+    color: var(--fourth-color);
+}
+
+
+.mainContainer2 {
+    background-color: var(--fourth-color);
+    height: 30vw;
+    width: 100%;
+    display: flex;
+}
+
+
+.container-content2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2vw;
+    gap: 2vw;
+}
+
+.content2-title {
+    display: flex;
+    color: var(--main-color);
+    font-size: max(4vw, 4vw + 1px);
+    font-weight: 500;
+}
+
+.content2-main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.content2-div1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fifth-color);
+    width: 30vw;
+    gap: 2vw;
+}
+
+.content2-main .material-symbols-outlined{
+    font-size: max(5vw, 5vw + 1px);
+}
+
+.text-content2 {
+    font-size: max(3vw, 3vw + 1px);
 }
