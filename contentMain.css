@@ -19,7 +19,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 30vw;
-    background-color: black;
 }
 
 .content1 {
@@ -38,12 +37,17 @@ body {
     background-color: var(--fifth-color);
     padding: .5vw;
     border-radius: 2vw;
+    transition: transform 150ms ease-in-out;
 }
 
 .content1 img {
     height: 100%;
     width: auto;
     border-radius: 2vw;
+}
+
+.img-wrapper:hover {
+    transform: scale(1.02);
 }
 
 .content1-text {
@@ -80,6 +84,9 @@ body {
 .content1-div2-text {
     color: var(--fourth-color);
 }
+.content1-div2-text {
+    font-size: max(2vw, 2vw + 1px);
+}
 
 
 .mainContainer2 {
@@ -114,7 +121,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 5vw;
 }
 
 .content2-div1 {
@@ -122,15 +129,170 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: var(--fifth-color);
-    width: 30vw;
-    gap: 2vw;
+    width: 22vw;
+    border-radius: 2vw;
 }
 
-.content2-main .material-symbols-outlined{
-    font-size: max(5vw, 5vw + 1px);
+.content2-div1-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    transition: transform 150ms ease-in-out;
+}
+
+.content2-main .material-symbols-outlined {
+    font-size: max(6vw, 6vw + 1px);
 }
 
 .text-content2 {
-    font-size: max(3vw, 3vw + 1px);
+    font-size: max(2vw, 2vw + 1px);
+}
+
+.content2-div1:hover {
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+.content2-div1:hover .content2-div1-inner {
+    transform: scale(1.2);
+}
+
+.content2-second {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box-content2 {
+    background-color: var(--second-color);
+    width: 100%;
+    height: .3vw;
+}
+
+.text2-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: max(4vw, 4vw + 1px);
+    color: var(--main-color);
+    padding-top: 2vw;
+}
+
+.mainContainer3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30vw;
+    background-color: white;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+
+.containerContent3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3CardContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.container3Wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 20w;
+    width: 30%;
+    background-color: black;
+    margin: 2vw 2vw 2vw 2vw;
+    border-radius: 2vw;
+    transition: transform 150ms ease-in-out;
+}
+
+.mainContainer3 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.content3-title {
+    display: flex;
+    color: var(--main-color);
+    font-size: max(4vw, 4vw + 1px);
+    font-weight: 500;
+    transition: transform 150ms ease-in-out,
+                color 150ms ease-in-out;
+}
+
+.content3-title:hover {
+    transform: scale(1.1);
+    color: var(--second-color-color);
+}
+
+.container3Wrapper:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mainContainer4 {
+    display: flex;
+    width: 100%;
+    height: 40vw;
+}
+
+.containerContent4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.content4-title {
+    display: flex;
+    color: var(--fourth-color);
+    font-size: max(4vw, 4vw + 1px);
+    font-weight: 500;
+    transition: transform 150ms ease-in-out,
+    color 150ms ease-in-out;
+}
+
+.content4-title:hover {
+    transform: scale(1.1);
+}
+
+.container4CardContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.container4Wrapper {
+    display: flex;
+    width: 45%;
+    height: 28vw;
+    margin: 2vw 2vw 2vw 2vw;
+    background-color: var(--fifth-color);
+    border-radius: 2vw;
+    transition: transform 150ms ease-in-out;
+}
+
+.container4Wrapper:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.mainContainer4 a {
+    text-decoration: none;
+    color: inherit;
 }

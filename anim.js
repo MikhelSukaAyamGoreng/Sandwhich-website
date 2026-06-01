@@ -14,3 +14,32 @@ document.addEventListener('mousedown', (e) => {
         nav.classList.remove('open');
     }
 });
+
+const open = document.getElementById('openSignOutModal');
+const modalContainer = document.querySelector('.signOutModalContainer');
+const close = document.getElementById('closeSignOutModal');
+const signOutModal1 = document.querySelector('.signOutModal1');
+const signOutModal2 = document.querySelector('.signOutModal2');
+const confirmSignOut = document.getElementById('confirmSignOutModal');
+const close2 = document.getElementById('closeSignOutModal2');
+
+open.addEventListener('click', ()=> {
+    modalContainer.classList.add('showSignOutModal');
+})
+
+close.addEventListener('click', ()=>{
+    modalContainer.classList.remove('showSignOutModal');
+    signOutModal1.style.display = 'flexk'
+    signOutModal2.style.display = 'none'
+})
+
+confirmSignOut.addEventListener('click', ()=> {
+    signOutModal1.style.display = 'none'
+    signOutModal2.style.display = 'flex'
+})
+
+close2.addEventListener('click', ()=>{
+    modalContainer.classList.remove('showSignOutModal');
+    signOutModal1.style.display = 'flex'
+    signOutModal2.style.display = 'none'
+})
