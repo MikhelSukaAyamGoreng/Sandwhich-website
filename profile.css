@@ -1,0 +1,144 @@
+:root {
+    --main-color: #01161e;
+    --second-color: #124559;
+    --third-color: #598392;
+    --fourth-color: #aec3b0;
+    --fifth-color: #eff6e0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--fifth-color);
+    margin: 0;
+}
+
+.content1Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content1Wrapper {
+    width: 100%;
+}
+
+.content1CardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.content1CardContainer1 {
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+}
+
+.content1CardContainer a {
+    all: unset;
+}
+
+.content1CardContainer1 .material-symbols-outlined {
+    margin: 2vw;
+    font-size: max(5vw, 5vw + 1px);
+    color: var(--fifth-color);
+    transition: transform 150ms ease-in-out;
+}
+
+.content1CardContainer1 .material-symbols-outlined:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.content1ProfileContainer {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 10vw;
+    border: 4px solid var(--main-color);
+    background-color: var(--third-color);
+    transition: transform 150ms ease-in-out;
+}
+
+.content1ProfileContainer:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.content1NameContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vw;
+}
+
+.content1AccountName {
+    color: var(--main-color);
+    font-size: max(4vw, 4vw + 1px);
+    transition: transform 150ms ease-in-out;
+    font-weight: 500;
+}
+
+.content1AccountName:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.content2Container {
+    display: flex;
+    width: 100%;
+    padding-top: 2vw;
+}
+
+.content2Wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 1vw;
+}
+
+.content2CardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--fourth-color);
+    width: 95%;
+    border-radius: 2vw;
+    gap: 2vw;
+    padding: 2vw;
+    transition: transform 150ms ease-in-out;
+}
+
+.content2CardContainer:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.content2CardContainer .material-symbols-outlined {
+    font-size: max(7vw, 7vw + 1px);
+    color: var(--main-color);
+}
+
+.content2Title {
+    font-size: max(3vw, 3vw + 1px);
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.content2Desc {
+    font-size: max(2vw, 2vw + 1px);
+    font-weight: 300;
+    color: var(--main-color);
+}

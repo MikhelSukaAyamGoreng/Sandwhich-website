@@ -156,7 +156,7 @@ body {
 }
 
 .content2-div1:hover .content2-div1-inner {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .content2-second {
@@ -232,12 +232,12 @@ body {
 }
 
 .content3-title:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: var(--second-color-color);
 }
 
 .container3Wrapper:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -266,7 +266,7 @@ body {
 }
 
 .content4-title:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .container4CardContainer {
@@ -289,7 +289,7 @@ body {
 
 .container4Wrapper:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .mainContainer4 a {
